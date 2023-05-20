@@ -1,0 +1,21 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a.link {
+  color: #00b7ff;
+  cursor: pointer !important;
+}
+
+.low {
+  background-color: #ff3333;
+}
+
+.normal {
+  background-color: #ffff33;
+}
+
+.high {
+  background-color: #02ff02;
+}
