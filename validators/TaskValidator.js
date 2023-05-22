@@ -18,7 +18,6 @@ module.exports = {
         .status(500)
         .json({ status: false, msg: "O código não é válido" });
     }
-
     req.params.id = value;
     return next();
   },

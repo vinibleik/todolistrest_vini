@@ -1,18 +1,15 @@
 const tasks = [];
 
-/**
- * Creates and returns a new task with the given name.
- * @param {string} name Task name.
- * @returns
- */
-function newTask(name, priority) {
+const newTask = (() => {
   let id = 0;
-  return {
-    id: id++,
-    name,
-    priority,
+  return function (name, priority) {
+    return {
+      id: ++id,
+      name,
+      priority,
+    };
   };
-}
+})();
 
 module.exports = {
   /**
@@ -57,7 +54,7 @@ module.exports = {
    * @returns {object | undefined}
    */
   getElementById(id) {
-    return tasks.find((task) => task.id === id);
+    return tasks.find((task) => task.id == id);
   },
   /**
    * Returns the position of the task with given id, -1 if not found.

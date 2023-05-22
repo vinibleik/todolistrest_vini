@@ -1,6 +1,37 @@
 body {
+  height: fit-content;
+  max-width: fit-content;
+  margin: auto;
+  background-color: grey;
+  border: 1px solid white;
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+li {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+button.btn.btn-link {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.error {
+  margin: 0;
+  margin-top: 20px;
+  color: black;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.show-error {
+  display: none;
 }
 
 a.link {
@@ -9,13 +40,13 @@ a.link {
 }
 
 .low {
-  background-color: #ff3333;
+  color: #ff3333;
 }
 
 .normal {
-  background-color: #ffff33;
+  color: #ffff33;
 }
 
 .high {
-  background-color: #02ff02;
+  color: #02ff02;
 }
